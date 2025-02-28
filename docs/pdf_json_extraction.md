@@ -61,9 +61,12 @@ this is PDF of a chapter from my math textbook. can u go through it all and conv
 
 ## Attempt 3
 - 1 Mar 2025, 1:22AM
-- used llama parse premium version (15 credits/1p)
-- [Output](../data/extracted_jsons/math_11_ch6_pnc_att3.md)
-- <B>FAILED attempt: gave markdown to o3-mini. NO RESULT. FAILED HORRIBLY </b>
+- used llama parse premium version (15 credits/1p) to convert into [Markdown](../data/extracted_jsons/math_11_ch6_pnc_att3_llama.md)
+- <b>Failed attempt</b>: gave markdown to o3-mini, almost same prompt just changed PDF to markdown at the start. NO RESULT. FAILED HORRIBLY
+- <b>Failed attempt</b>: gave markdown to claude 3.5 sonnet, same prompt as o3-mini. Not enough tokens apparently
+- <b>Successful attempt?</b>: gave markdown to deepseek (not deepthink r1), same prompt as o3-mini. [OUTPUT](../data/extracted_jsons/math_11_ch6_pnc_att3.json)
+    - Had to click on continue thrice, so maybe it might not work for very long chapters. 
 
 <b>Observations</b>
 - perfect converting into markdown, need to some processing to get in our required format.
+- with deepseek the results look decent (<span style="color:orange">TODO: need to thoroughly check</span>)
