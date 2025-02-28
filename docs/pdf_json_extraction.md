@@ -1,6 +1,7 @@
 # Extract the JSON from PDF 
 
 ## Attempt 1
+- 1 Mar, 2025 12:02AM
 - I used o3-mini hosted on chat.com
 - attached the [PDF file](../data/raw_pdf_files/math_11_ch6_pnc.pdf)
 - turned on the reasoning mode
@@ -29,6 +30,7 @@ this is PDF of a chapter from my math textbook. can u go through it all and conv
 - reasoning in example_problems is also summarised.
 
 ## Attempt 2
+- 1 Mar, 2025 12:18AM
 - tweaked the prompt to send verbatim content
 
 - prompt:
@@ -48,7 +50,11 @@ this is PDF of a chapter from my math textbook. can u go through it all and conv
 }] # list of all the exercise questions in the chapter
 }
 ```
+- [Output](../data/extracted_jsons/math_11_ch6_pnc_att2.json)
 
 <b>Observations</b>
 - chapter_text looks like it is verbatim (<span style="color:red">TODO: need to thoroughly check</span>)
 - example solutions are definitely summarised (Checked the first one and it is summarised.)
+
+<b>Conclusion</b>
+for the first version just to test it out, assuming this is the correct dataset and trying how well the model can solve it.
