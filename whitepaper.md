@@ -13,6 +13,13 @@ Thereby dividing a model’s post training into 2 parts:
 
 **Few brainstorming ideas**
 
+- For the first attempt, use DeepSeek-R1 thinking format:
+```
+<think>
+</think>
+```
+we will do simple FT for auto-regression and GRPO like deep-seek r1 did, for the RL training
+
 - Change the standard reasoning prompt to the following way:
 
 ```html
