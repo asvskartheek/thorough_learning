@@ -53,8 +53,8 @@ this is PDF of a chapter from my math textbook. can u go through it all and conv
 - [Output](../data/extracted_jsons/math_11_ch6_pnc_att2.json)
 
 <b>Observations</b>
-- chapter_text looks like it is verbatim (<span style="color:red">TODO: need to thoroughly check</span>)
+- chapter_text looks like it is verbatim (<span style="color:orange">TODO: need to thoroughly check</span>)
 - example solutions are definitely summarised (Checked the first one and it is summarised.)
-
-<b>Conclusion</b>
-for the first version just to test it out, assuming this is the correct dataset and trying how well the model can solve it.
+- also changing the questions in the examples section
+    - L36: original question is with expanded version of 5C2.
+    - L41: question itself is wrong, did a wrong parsing.
