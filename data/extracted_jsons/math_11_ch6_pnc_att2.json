@@ -1,0 +1,281 @@
+{
+  "chapter_name": "PERMUTATIONS AND COMBINATIONS",
+  "chapter_text": "6.1  Introduction\n\nSuppose you have a suitcase with a number lock. The number lock has 4 wheels each labelled with 10 digits from 0 to 9. The lock can be opened if 4 specific digits are arranged in a particular sequence with no repetition. Somehow, you have forgotten this specific sequence of digits. You remember only the first digit which is 7. In order to open the lock, how many sequences of 3-digits you may have to check with? To answer this question, you may, immediately, start listing all possible arrangements of 9 remaining digits taken 3 at a time. But, this method will be tedious, because the number of possible sequences may be large. Here, in this Chapter, we shall learn some basic counting techniques which will enable us to answer this question without actually listing 3-digit arrangements. In fact, these techniques will be useful in determining the number of different ways of arranging and selecting objects without actually listing them. As a first step, we shall examine a principle which is most fundamental to the learning of these techniques.\n\n6.2  Fundamental Principle of Counting\n\nLet us consider the following problem. Mohan has 3 pants and 2 shirts. How many different pairs of a pant and a shirt can he dress up with? There are 3 ways in which a pant can be chosen, because there are 3 pants available. Similarly, a shirt can be chosen in 2 ways. For every choice of a pant, there are 2 choices of a shirt. Therefore, there are 3 × 2 = 6 pairs of a pant and a shirt.\n\nLet us name the three pants as P1, P2, P3 and the two shirts as S1, S2. Then, these six possibilities can be illustrated in the Fig. 6.1.\n\nLet us consider another problem of the same type. Sabnam has 2 school bags, 3 tiffin boxes and 2 water bottles. In how many ways can she carry these items (choosing one each)? A school bag can be chosen in 2 different ways. After a school bag is chosen, a tiffin box can be chosen in 3 different ways. Hence, there are 2 × 3 = 6 pairs of school bag and a tiffin box. For each of these pairs a water bottle can be chosen in 2 different ways. Hence, there are 6 × 2 = 12 different ways in which Sabnam can carry these items to school. If we name the 2 school bags as B1, B2, the three tiffin boxes as T1, T2, T3 and the two water bottles as W1, W2, these possibilities can be illustrated in the Fig. 6.2.\n\nIn fact, the problems of the above types are solved by applying the following principle known as the fundamental principle of counting, or, simply, the multiplication principle, which states that “If an event can occur in m different ways, following which another event can occur in n different ways, then the total number of occurrence of the events in the given order is m×n.”\n\nThe above principle can be generalised for any finite number of events. For example, for 3 events, the principle is as follows: ‘If an event can occur in m different ways, following which another event can occur in n different ways, following which a third event can occur in p different ways, then the total number of occurrence of the events in the given order is m × n × p.’\n\nIn the first problem, the required number of ways of wearing a pant and a shirt was the number of different ways of the occurrence of the following events in succession: (i) the event of choosing a pant, (ii) the event of choosing a shirt. In the second problem, the required number of ways was the number of different ways of the occurrence of the following events in succession: (i) the event of choosing a school bag, (ii) the event of choosing a tiffin box, (iii) the event of choosing a water bottle. Here, in both cases, the events in each problem could occur in various possible orders. But, we have to choose any one of the possible orders and count the number of different ways of the occurrence of the events in this chosen order.\n\n6.3 Permutations\n\nIn Example 1 of the previous Section, we are actually counting the different possible arrangements of the letters such as ROSE, REOS, etc. Here, each arrangement is different from the other; in other words, the order of writing the letters is important. Each arrangement is called a permutation of 4 different letters taken all at a time. Now, if we have to determine the number of 3-letter words, with or without meaning, which can be formed out of the letters of the word NUMBER, where the repetition of the letters is not allowed, we need to count the arrangements such as NUM, NMU, MUN, NUB, etc. Here, we are counting the permutations of 6 different letters taken 3 at a time. The required number of words = 6 × 5 × 4 = 120 (by using the multiplication principle). If the repetition of the letters was allowed, the required number of words would be 6 × 6 × 6 = 216.\n\nDefinition 1: A permutation is an arrangement in a definite order of a number of objects taken some or all at a time.\n\n6.3.1 Permutations when all the objects are distinct\n\nTheorem 1: The number of permutations of n different objects taken r at a time, where 0 < r ≤ n and the objects do not repeat, is n × (n – 1) × (n – 2) ... (n – r + 1), which is denoted by nPr.\n\nProof: There will be as many permutations as there are ways of filling in r vacant places by the n objects. The first place can be filled in n ways; following which, the second place can be filled in (n – 1) ways; following which, the third place can be filled in (n – 2) ways; …, the rth place can be filled in (n – (r – 1)) ways. Therefore, the number of ways of filling in r vacant places in succession is n(n – 1)(n – 2)...(n – r + 1).\n\n6.3.2 Factorial Notation\n\nThe notation n! represents the product of the first n natural numbers, i.e., 1 × 2 × 3 × ... × (n – 1) × n, and is denoted as n!. We read this symbol as ‘n factorial’. For example, 1 = 1!, 1 × 2 = 2!, 1 × 2 × 3 = 3!, 1 × 2 × 3 × 4 = 4!, and so on. We define 0! = 1. We can write 5! = 5 × 4! = 5 × 4 × 3! = 5 × 4 × 3 × 2! = 5 × 4 × 3 × 2 × 1. Clearly, for a natural number n, n! = n × (n – 1)! = n (n – 1)(n – 2)! [provided n ≥ 2] = n (n – 1)(n – 2)(n – 3)! [provided n ≥ 3], and so on.\n\n6.3.3 Derivation of the Formula for nPr\n\nMultiplying the product n(n – 1)...(n – r + 1) by (n – r)! in both the numerator and the denominator, we obtain n!/(n – r)!. Thus, nPr = n!/(n – r)!, where 0 ≤ r ≤ n. In particular, when r = n, nPn = n!/0! = n!. Arranging no object at all is the same as leaving behind all the objects, and there is only one way of doing so. Thus, nP0 = 1.\n\n6.3.4 Permutations when the Objects are not Distinct\n\nSuppose we have to find the number of ways of rearranging the letters of the word ROOT. In this case, the letters are not all different as there are 2 Os. Temporarily treating the Os as distinct, the number of permutations is 4!. However, since the Os are identical, we must divide by 2! to correct for overcounting. Therefore, the number of distinct permutations is 4!/2!.\n\nSimilarly, for the word INSTITUTE, which has 9 letters with I appearing 2 times and T appearing 3 times, the number of distinct permutations is 9!/(2!×3!).\n\nTheorem 3: The number of permutations of n objects, where p objects are of the same kind and the rest are all different, is n!/p!.\n\nTheorem 4: The number of permutations of n objects, where p1 objects are of one kind, p2 of another kind, ..., pk of the kth kind, is n!/(p1! p2! ... pk!).\n\n6.4 Combinations\n\nConsider a group of 3 lawn tennis players X, Y, Z. A team consisting of 2 players is to be formed. In how many ways can this be done? Since the order is not important, there are only 3 possible teams: XY, YZ, and ZX. Each selection is called a combination of 3 objects taken 2 at a time.\n\nFor example, if we have 4 objects A, B, C, D and we take 2 at a time, the possible combinations are AB, AC, AD, BC, BD, and CD, which is 4C2 = 6. Corresponding to each combination, there are 2! arrangements; hence, 4P2 = 4C2 × 2!.\n\nSimilarly, for 5 objects taken 3 at a time, 5P3 = 5C3 × 3!.\n\nThis leads to the general relationship: nPr = nCr × r!.\n\nRemarks:\n1. nCr = n!/(r!(n – r)!) and nCr = nC(n – r).\n2. We define nC0 = 1.\n3. Selecting nothing at all is considered to be 1 way.\n\nSummary\n\n– Fundamental principle of counting: If an event can occur in m ways and a subsequent event can occur in n ways, then the total number of occurrences is m × n.\n– The number of permutations of n different objects taken r at a time (without repetition) is nPr = n!/(n – r)!.\n– Factorial notation: n! = 1 × 2 × 3 × ... × n, with 0! defined as 1.\n– The number of permutations of n objects taken r at a time (with repetition allowed) is n^r.\n– For objects with repetitions, the number of distinct permutations is given by dividing n! by the factorials of the number of repetitions.\n– The number of combinations of n objects taken r at a time is nCr = n!/(r!(n – r)!).\n\nHistorical Note\n\nThe concepts of permutations and combinations can be traced back to ancient times, with significant contributions from Indian mathematicians such as Mahavira and Bhaskaracharya. The systematic study of these topics was further developed in works such as Ars Conjectandi by Jacob Bernoulli, laying the foundations for modern combinatorics.",
+  "example_problems": [
+    {
+      "question": "Find the number of 4 letter words, with or without meaning, which can be formed out of the letters of the word ROSE, where the repetition of the letters is not allowed.",
+      "reasoning": "There are as many words as there are ways of filling in 4 vacant places by the 4 letters R, O, S, E. The first place can be filled in 4 ways; the second in 3 ways; the third in 2 ways; and the fourth in 1 way. Thus, by the multiplication principle, the total number is 4 × 3 × 2 × 1.",
+      "answer": "24"
+    },
+    {
+      "question": "Given 4 flags of different colours, how many different signals can be generated if a signal requires the use of 2 flags one below the other?",
+      "reasoning": "The upper flag can be chosen in 4 ways and the lower flag in 3 ways from the remaining flags. Hence, the total number of signals is 4 × 3.",
+      "answer": "12"
+    },
+    {
+      "question": "How many 2-digit even numbers can be formed from the digits 1, 2, 3, 4, 5 if the digits can be repeated?",
+      "reasoning": "The units place has 2 options (2 or 4) and the tens place can be filled in 5 ways (digits can be repeated). Thus, total = 2 × 5.",
+      "answer": "10"
+    },
+    {
+      "question": "Find the number of different signals that can be generated by arranging at least 2 flags in order on a vertical staff, if five different flags are available.",
+      "reasoning": "Signals can have 2, 3, 4, or 5 flags. The number for 2 flags is 5 × 4, for 3 flags is 5 × 4 × 3, for 4 flags is 5 × 4 × 3 × 2, and for 5 flags is 5 × 4 × 3 × 2 × 1. Summing these gives 20 + 60 + 120 + 120.",
+      "answer": "320"
+    },
+    {
+      "question": "Evaluate (i) 5! (ii) 7! (iii) 7! – 5!",
+      "reasoning": "Solution: (i) 5! = 1×2×3×4×5 = 120; (ii) 7! = 1×2×3×4×5×6×7 = 5040; (iii) 7! – 5! = 5040 – 120.",
+      "answer": "120; 5040; 4920"
+    },
+    {
+      "question": "Compute (i) 7!/5! (ii) 12!/(10!×2!)",
+      "reasoning": "Solution: (i) 7!/5! = 7×6 = 42; (ii) 12!/(10!×2!) = (12×11)/2 = 66.",
+      "answer": "42; 66"
+    },
+    {
+      "question": "Evaluate 5C2.",
+      "reasoning": "5C2 = 5!/(2!×3!) = 120/(2×6) = 10.",
+      "answer": "10"
+    },
+    {
+      "question": "If 1/8! + 1/9! + 1/10! = x, find x.",
+      "reasoning": "By computing the sum and simplifying the expression, we obtain x = 100.",
+      "answer": "100"
+    },
+    {
+      "question": "Find the number of permutations of the letters of the word ALLAHABAD.",
+      "reasoning": "There are 9 letters with 4 A's and 2 L's. The number of distinct arrangements is 9!/(4!×2!) = 7560.",
+      "answer": "7560"
+    },
+    {
+      "question": "How many 4-digit numbers can be formed using the digits 1 to 9 if repetition is not allowed?",
+      "reasoning": "This is the number of permutations of 9 digits taken 4 at a time, which is 9×8×7×6 = 3024.",
+      "answer": "3024"
+    },
+    {
+      "question": "How many numbers between 100 and 1000 can be formed with the digits 0, 1, 2, 3, 4, 5 if repetition is not allowed?",
+      "reasoning": "Count the total 3-digit numbers from the available digits and subtract those where 0 is in the hundred's place. The result is 100.",
+      "answer": "100"
+    },
+    {
+      "question": "Find the value of n in the given problems.",
+      "reasoning": "By dividing the factorial expressions and solving the resulting equations, we obtain n = 10 in both cases.",
+      "answer": "10"
+    },
+    {
+      "question": "Find r if 5P4 = 6P(r–1).",
+      "reasoning": "Solving the equation (6 – r)(5 – r) = 6 leads to a quadratic whose solutions are r = 8 or r = 3.",
+      "answer": "r = 8, 3"
+    },
+    {
+      "question": "Find the number of different 8-letter arrangements from the word DAUGHTER such that (i) all vowels occur together and (ii) all vowels do not occur together.",
+      "reasoning": "For (i), treat the vowels (A, U, E) as a single unit. The number is 6! × 3! = 4320. For (ii), subtract the arrangements with vowels together from the total 8! arrangements: 8! – (6!×3!) = 36000.",
+      "answer": "(i) 4320, (ii) 36000"
+    },
+    {
+      "question": "In how many ways can 4 red, 3 yellow, and 2 green discs be arranged in a row if discs of the same colour are indistinguishable?",
+      "reasoning": "Total arrangements = 9!/(4!×3!×2!) = 1260.",
+      "answer": "1260"
+    },
+    {
+      "question": "Find the number of arrangements of the letters of the word INDEPENDENCE such that (i) the word starts with P, (ii) all vowels occur together, (iii) vowels never occur together, (iv) the word begins with I and ends with P.",
+      "reasoning": "Total arrangements = 12!/(3!×4!×2!) = 1663200. (i) With P fixed at the start: 11!/(3!×2!×4!) = 138600. (ii) With vowels as a block: 8!/(3!×2!) × (5!/4!) = 16800. (iii) Total minus (ii): 1663200 – 16800 = 1646400. (iv) With I and P fixed at the ends: 10!/(3!×2!×4!) = 12600.",
+      "answer": "(i) 138600, (ii) 16800, (iii) 1646400, (iv) 12600"
+    },
+    {
+      "question": "How many words, with or without meaning, each containing 3 vowels and 2 consonants can be formed from the word INVOLUTE?",
+      "reasoning": "Choose 3 vowels from 4: 4C3 = 4, and 2 consonants from 4: 4C2 = 6. Total combinations = 4 × 6 = 24. Arranging the 5 letters gives 24 × 5! = 2880.",
+      "answer": "2880"
+    },
+    {
+      "question": "A group consists of 4 girls and 7 boys. In how many ways can a team of 5 be selected if (i) no girl is chosen, (ii) at least one boy and one girl are chosen, (iii) at least 3 girls are chosen?",
+      "reasoning": "(i) Only boys: 7C5 = 21. (ii) By considering all cases with at least one boy and one girl, the total comes to 441. (iii) For teams with at least 3 girls: 3 girls and 2 boys yield 4C3×7C2 = 84, and 4 girls and 1 boy yield 4C4×7C1 = 7; total = 84 + 7 = 91.",
+      "answer": "(i) 21, (ii) 441, (iii) 91"
+    },
+    {
+      "question": "Find the number of words that can be made from the letters of the word AGAIN and determine the 50th word when arranged in dictionary order.",
+      "reasoning": "Total words = 5!/(2!) = 60. Counting the words in order shows that the 49th word is NAAGI and the 50th word is NAAIG.",
+      "answer": "NAAIG"
+    },
+    {
+      "question": "How many numbers greater than 1,000,000 can be formed using the digits 1, 2, 0, 2, 4, 2, 4?",
+      "reasoning": "Only 7-digit numbers are considered. By counting numbers beginning with 1, 2, or 4, we get totals of 60, 180, and 120 respectively, which sum to 360.",
+      "answer": "360"
+    },
+    {
+      "question": "In how many ways can 5 girls and 3 boys be seated in a row so that no two boys are together?",
+      "reasoning": "Seat 5 girls in 5! ways, then place 3 boys in the 6 gaps between and around the girls in 6P3 ways. Thus, the total number of arrangements is 5! × 6P3 = 120 × 120 = 14400.",
+      "answer": "14400"
+    }
+  ],
+  "exercises": [
+    {
+      "question": "How many 3-digit numbers can be formed from the digits 1, 2, 3, 4 and 5 assuming that (i) repetition of the digits is allowed? (ii) repetition of the digits is not allowed?",
+      "answer": ""
+    },
+    {
+      "question": "How many 3-digit even numbers can be formed from the digits 1, 2, 3, 4, 5, 6 if the digits can be repeated?",
+      "answer": ""
+    },
+    {
+      "question": "How many 4-letter codes can be formed using the first 10 letters of the English alphabet, if no letter can be repeated?",
+      "answer": ""
+    },
+    {
+      "question": "How many 5-digit telephone numbers can be constructed using the digits 0 to 9 if each number starts with 67 and no digit appears more than once?",
+      "answer": ""
+    },
+    {
+      "question": "A coin is tossed 3 times and the outcomes are recorded. How many possible outcomes are there?",
+      "answer": ""
+    },
+    {
+      "question": "Given 5 flags of different colours, how many different signals can be generated if each signal requires the use of 2 flags, one below the other?",
+      "answer": ""
+    },
+    {
+      "question": "Evaluate (i) 8! (ii) 4! – 3!",
+      "answer": ""
+    },
+    {
+      "question": "Is 3! + 4! = 7! ?",
+      "answer": ""
+    },
+    {
+      "question": "Compute 8!/(6!×2!).",
+      "answer": ""
+    },
+    {
+      "question": "If 1/6! + 1/7! + 1/8! = x, find x.",
+      "answer": ""
+    },
+    {
+      "question": "Evaluate (i) n!/(n–r)! for n = 6, r = 2 and (ii) for n = 9, r = 5.",
+      "answer": ""
+    },
+    {
+      "question": "How many 3-digit numbers can be formed by using the digits 1 to 9 if no digit is repeated?",
+      "answer": ""
+    },
+    {
+      "question": "How many 4-digit numbers are there with no digit repeated?",
+      "answer": ""
+    },
+    {
+      "question": "How many 3-digit even numbers can be made using the digits 1, 2, 3, 4, 6, 7, if no digit is repeated?",
+      "answer": ""
+    },
+    {
+      "question": "Find the number of 4-digit numbers that can be formed using the digits 1, 2, 3, 4, 5 if no digit is repeated. How many of these will be even?",
+      "answer": ""
+    },
+    {
+      "question": "From a committee of 8 persons, in how many ways can we choose a chairman and a vice chairman assuming one person cannot hold more than one position?",
+      "answer": ""
+    },
+    {
+      "question": "Find n if (n–1)P3 : nP4 = 1 : 9.",
+      "answer": ""
+    },
+    {
+      "question": "Find r if (i) 5 6 1P 2 Pr r–= (ii) 5 6 1P Pr r–=.",
+      "answer": ""
+    },
+    {
+      "question": "How many words, with or without meaning, can be formed using all the letters of the word EQUATION, using each letter exactly once?",
+      "answer": ""
+    },
+    {
+      "question": "How many words, with or without meaning, can be made from the letters of the word MONDAY, assuming that no letter is repeated, if (i) 4 letters are used at a time, (ii) all letters are used at a time, (iii) all letters are used but the first letter is a vowel?",
+      "answer": ""
+    },
+    {
+      "question": "In how many of the distinct permutations of the letters in MISSISSIPPI do the four I’s not come together?",
+      "answer": ""
+    },
+    {
+      "question": "In how many ways can the letters of the word PERMUTATIONS be arranged if (i) the word starts with P and ends with S, (ii) vowels are all together, (iii) there are always 4 letters between P and S?",
+      "answer": ""
+    },
+    {
+      "question": "If nC8 = nC2, find nC2.",
+      "answer": ""
+    },
+    {
+      "question": "Determine n if (i) 2nC3 : nC3 = 12 : 1 (ii) 2nC3 : nC3 = 11 : 1.",
+      "answer": ""
+    },
+    {
+      "question": "How many chords can be drawn through 21 points on a circle?",
+      "answer": ""
+    },
+    {
+      "question": "In how many ways can a team of 3 boys and 3 girls be selected from 5 boys and 4 girls?",
+      "answer": ""
+    },
+    {
+      "question": "Find the number of ways of selecting 9 balls from 6 red balls, 5 white balls and 5 blue balls if each selection consists of 3 balls of each colour.",
+      "answer": ""
+    },
+    {
+      "question": "Determine the number of 5-card combinations out of a deck of 52 cards if there is exactly one ace in each combination.",
+      "answer": ""
+    },
+    {
+      "question": "In how many ways can one select a cricket team of eleven from 17 players in which only 5 players can bowl if each cricket team of 11 must include exactly 4 bowlers?",
+      "answer": ""
+    },
+    {
+      "question": "A bag contains 5 black and 6 red balls. Determine the number of ways in which 2 black and 3 red balls can be selected.",
+      "answer": ""
+    },
+    {
+      "question": "In how many ways can a student choose a programme of 5 courses if 9 courses are available and 2 specific courses are compulsory for every student?",
+      "answer": ""
+    },
+    {
+      "question": "How many words, with or without meaning, each containing 2 vowels and 3 consonants can be formed from the letters of the word DAUGHTER?",
+      "answer": ""
+    },
+    {
+      "question": "How many words, with or without meaning, can be formed using all the letters of the word EQUATION at a time so that the vowels and consonants occur together?",
+      "answer": ""
+    },
+    {
+      "question": "A committee of 7 has to be formed from 9 boys and 4 girls. In how many ways can this be done when the committee consists of: (i) exactly 3 girls? (ii) at least 3 girls? (iii) at most 3 girls?",
+      "answer": ""
+    },
+    {
+      "question": "If the different permutations of all the letters of the word EXAMINATION are listed as in a dictionary, how many words are there in this list before the first word starting with E?",
+      "answer": ""
+    },
+    {
+      "question": "How many 6-digit numbers can be formed from the digits 0, 1, 3, 5, 7 and 9 which are divisible by 10 and no digit is repeated?",
+      "answer": ""
+    },
+    {
+      "question": "The English alphabet has 5 vowels and 21 consonants. How many words with two different vowels and 2 different consonants can be formed from the alphabet?",
+      "answer": ""
+    },
+    {
+      "question": "In an examination, a question paper consists of 12 questions divided into two parts: Part I with 5 questions and Part II with 7 questions. A student is required to attempt 8 questions in all, selecting at least 3 from each part. In how many ways can a student select the questions?",
+      "answer": ""
+    },
+    {
+      "question": "Determine the number of 5-card combinations out of a deck of 52 cards if each selection of 5 cards has exactly one king.",
+      "answer": ""
+    },
+    {
+      "question": "It is required to seat 5 men and 4 women in a row so that the women occupy the even places. How many such arrangements are possible?",
+      "answer": ""
+    },
+    {
+      "question": "From a class of 25 students, 10 are to be chosen for an excursion party. There are 3 students who decide that either all of them will join or none of them will join. In how many ways can the excursion party be chosen?",
+      "answer": ""
+    },
+    {
+      "question": "In how many ways can the letters of the word ASSASSINATION be arranged so that all the S’s are together?",
+      "answer": ""
+    }
+  ]
+}
