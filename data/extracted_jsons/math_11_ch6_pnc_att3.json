@@ -96,171 +96,171 @@
   "exercises": [
     {
       "question": "How many 3-digit numbers can be formed from the digits 1, 2, 3, 4 and 5 assuming that (i) repetition of the digits is allowed? (ii) repetition of the digits is not allowed?",
-      "answer": ""
+      "answer": "(i) 125 (ii) 60"
     },
     {
       "question": "How many 3-digit even numbers can be formed from the digits 1, 2, 3, 4, 5, 6 if the digits can be repeated?",
-      "answer": ""
+      "answer": "108"
     },
     {
       "question": "How many 4-letter code can be formed using the first 10 letters of the English alphabet, if no letter can be repeated?",
-      "answer": ""
+      "answer": "5040"
     },
     {
       "question": "How many 5-digit telephone numbers can be constructed using the digits 0 to 9 if each number starts with 67 and no digit appears more than once?",
-      "answer": ""
+      "answer": "336"
     },
     {
       "question": "A coin is tossed 3 times and the outcomes are recorded. How many possible outcomes are there?",
-      "answer": ""
+      "answer": "8"
     },
     {
       "question": "Given 5 flags of different colours, how many different signals can be generated if each signal requires the use of 2 flags, one below the other?",
-      "answer": ""
+      "answer": "20"
     },
     {
       "question": "Evaluate (i) 8 ! (ii) 4 ! – 3 !",
-      "answer": ""
+      "answer": "(i) 40320 (ii) 183"
     },
     {
       "question": "Is 3 ! + 4 ! = 7 ! ?",
-      "answer": ""
+      "answer": "No; 30."
     },
     {
       "question": "Compute $\\frac{8!}{6! \\times 2!}$",
-      "answer": ""
+      "answer": "28"
     },
     {
       "question": "If $\\frac{1}{6!} + \\frac{1}{7!} = \\frac{x}{8!}$, find x",
-      "answer": ""
+      "answer": "64"
     },
     {
       "question": "Evaluate $\\frac{n!}{(n-r)!}$, when (i) n = 6, r = 2 (ii) n = 9, r = 5.",
-      "answer": ""
+      "answer": "(i) 30 (ii) 15120"
     },
     {
       "question": "How many 3-digit numbers can be formed by using the digits 1 to 9 if no digit is repeated?",
-      "answer": ""
+      "answer": "504"
     },
     {
       "question": "How many 4-digit numbers are there with no digit repeated?",
-      "answer": ""
+      "answer": "4536"
     },
     {
       "question": "How many 3-digit even numbers can be made using the digits 1, 2, 3, 4, 6, 7, if no digit is repeated?",
-      "answer": ""
+      "answer": "60"
     },
     {
       "question": "Find the number of 4-digit numbers that can be formed using the digits 1, 2, 3, 4, 5 if no digit is repeated. How many of these will be even?",
-      "answer": ""
+      "answer": "120, 48"
     },
     {
       "question": "From a committee of 8 persons, in how many ways can we choose a chairman and a vice chairman assuming one person can not hold more than one position?",
-      "answer": ""
+      "answer": "56"
     },
     {
       "question": "Find n if $$_{n-1}P_3 : _nP_4 = 1 : 9$$.",
-      "answer": ""
+      "answer": "9"
     },
     {
       "question": "Find r if (i) $$_5P_r = _6P_{r-1}$$ (ii) $$_5P_r = _6P_{r-1}$$.",
-      "answer": ""
+      "answer": "(i) 3 (ii) 4"
     },
     {
       "question": "How many words, with or without meaning, can be formed using all the letters of the word EQUATION, using each letter exactly once?",
-      "answer": ""
+      "answer": "40320"
     },
     {
       "question": "How many words, with or without meaning can be made from the letters of the word MONDAY, assuming that no letter is repeated, if: (i) 4 letters are used at a time, (ii) all letters are used at a time, (iii) all letters are used but first letter is a vowel?",
-      "answer": ""
+      "answer": "(i) 360 (ii) 720 (iii) 240"
     },
     {
       "question": "In how many of the distinct permutations of the letters in MISSISSIPPI do the four I's not come together?",
-      "answer": ""
+      "answer": "33810"
     },
     {
       "question": "In how many ways can the letters of the word PERMUTATIONS be arranged if the (i) words start with P and end with S, (ii) vowels are all together, (iii) there are always 4 letters between P and S?",
-      "answer": ""
+      "answer": "(i) 1814400 (ii) 2419200 (iii) 25401600"
     },
     {
       "question": "If ⁿC₈ = ⁿC₂, find ⁿC₂.",
-      "answer": ""
+      "answer": "45"
     },
     {
       "question": "Determine n if (i) ²ⁿC₃ : ⁿC₃ = 12 : 1 (ii) ²ⁿC₃ : ⁿC₃ = 11 : 1",
-      "answer": ""
+      "answer": "(i) 5 (ii) 6"
     },
     {
       "question": "How many chords can be drawn through 21 points on a circle?",
-      "answer": ""
+      "answer": "210"
     },
     {
       "question": "In how many ways can a team of 3 boys and 3 girls be selected from 5 boys and 4 girls?",
-      "answer": ""
+      "answer": "40"
     },
     {
       "question": "Find the number of ways of selecting 9 balls from 6 red balls, 5 white balls and 5 blue balls if each selection consists of 3 balls of each colour.",
-      "answer": ""
+      "answer": "2000"
     },
     {
       "question": "Determine the number of 5 card combinations out of a deck of 52 cards if there is exactly one ace in each combination.",
-      "answer": ""
+      "answer": "778320"
     },
     {
       "question": "In how many ways can one select a cricket team of eleven from 17 players in which only 5 players can bowl if each cricket team of 11 must include exactly 4 bowlers?",
-      "answer": ""
+      "answer": "3960"
     },
     {
       "question": "A bag contains 5 black and 6 red balls. Determine the number of ways in which 2 black and 3 red balls can be selected.",
-      "answer": ""
+      "answer": "200"
     },
     {
       "question": "In how many ways can a student choose a programme of 5 courses if 9 courses are available and 2 specific courses are compulsory for every student?",
-      "answer": ""
+      "answer": "35"
     },
     {
       "question": "How many words, with or without meaning, each of 2 vowels and 3 consonants can be formed from the letters of the word DAUGHTER ?",
-      "answer": ""
+      "answer": "3600"
     },
     {
       "question": "How many words, with or without meaning, can be formed using all the letters of the word EQUATION at a time so that the vowels and consonants occur together?",
-      "answer": ""
+      "answer": "1440"
     },
     {
       "question": "A committee of 7 has to be formed from 9 boys and 4 girls. In how many ways can this be done when the committee consists of: (i) exactly 3 girls ? (ii) atleast 3 girls ? (iii) atmost 3 girls ?",
-      "answer": ""
+      "answer": "(i) 504 (ii) 588 (iii) 1632"
     },
     {
       "question": "If the different permutations of all the letter of the word EXAMINATION are listed as in a dictionary, how many words are there in this list before the first word starting with E ?",
-      "answer": ""
+      "answer": "907200"
     },
     {
       "question": "How many 6-digit numbers can be formed from the digits 0, 1, 3, 5, 7 and 9 which are divisible by 10 and no digit is repeated ?",
-      "answer": ""
+      "answer": "120"
     },
     {
       "question": "The English alphabet has 5 vowels and 21 consonants. How many words with two different vowels and 2 different consonants can be formed from the alphabet ?",
-      "answer": ""
+      "answer": "50400"
     },
     {
       "question": "In an examination, a question paper consists of 12 questions divided into two parts i.e., Part I and Part II, containing 5 and 7 questions, respectively. A student is required to attempt 8 questions in all, selecting at least 3 from each part. In how many ways can a student select the questions ?",
-      "answer": ""
+      "answer": "420"
     },
     {
       "question": "Determine the number of 5-card combinations out of a deck of 52 cards if each selection of 5 cards has exactly one king.",
-      "answer": ""
+      "answer": "4C1×48C4"
     },
     {
       "question": "It is required to seat 5 men and 4 women in a row so that the women occupy the even places. How many such arrangements are possible ?",
-      "answer": ""
+      "answer": "2880"
     },
     {
       "question": "From a class of 25 students, 10 are to be chosen for an excursion party. There are 3 students who decide that either all of them will join or none of them will join. In how many ways can the excursion party be chosen ?",
-      "answer": ""
+      "answer": "22C7+22C10"
     },
     {
       "question": "In how many ways can the letters of the word ASSASSINATION be arranged so that all the S's are together ?",
-      "answer": ""
+      "answer": "151200"
     }
   ]
 }

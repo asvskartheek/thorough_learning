@@ -65,8 +65,10 @@ this is PDF of a chapter from my math textbook. can u go through it all and conv
 - <b>Failed attempt</b>: gave markdown to o3-mini, almost same prompt just changed PDF to markdown at the start. NO RESULT. FAILED HORRIBLY
 - <b>Failed attempt</b>: gave markdown to claude 3.5 sonnet, same prompt as o3-mini. Not enough tokens apparently
 - <b>Successful attempt?</b>: gave markdown to deepseek (not deepthink r1), same prompt as o3-mini. [OUTPUT](../data/extracted_jsons/math_11_ch6_pnc_att3.json)
-    - Had to click on continue thrice, so maybe it might not work for very long chapters. 
+    - Had to click on continue thrice, so maybe it might not work for very long chapters.
+    - then added solutions manually from the [solutions pdf](../data/raw_pdf_files/math_11_solns.pdf)
 
 <b>Observations</b>
 - perfect converting into markdown, need to some processing to get in our required format.
-- with deepseek the results look decent (<span style="color:orange">TODO: need to thoroughly check</span>)
+- with deepseek the results look decent, did a high-level rough check (<span style="color:orange">TODO: need to thoroughly check</span>)
+- ran [data sanity check](../sanity_check_ch6_data.py) number of exercises is correct, but LLM missed 6 example_problems in the middle. [Examples 17, 18, 19, 20, 21, 22 from the textbook]. All of this data is present in the [extracted markdown](../data/extracted_jsons/math_11_ch6_pnc_att3_llama.md), so deepseek model made the error.
