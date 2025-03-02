@@ -72,3 +72,10 @@ this is PDF of a chapter from my math textbook. can u go through it all and conv
 - perfect converting into markdown, need to some processing to get in our required format.
 - with deepseek the results look decent, did a high-level rough check (<span style="color:orange">TODO: need to thoroughly check</span>)
 - ran [data sanity check](../sanity_check_ch6_data.py) number of exercises is correct, but LLM missed 6 example_problems in the middle. [Examples 17, 18, 19, 20, 21, 22 from the textbook]. All of this data is present in the [extracted markdown](../data/extracted_jsons/math_11_ch6_pnc_att3_llama.md), so deepseek model made the error.
+- converted the missing examples text to same format using claude-sonnet-3.5 on copilot, prompt:
+
+> convert following examples into this json following the same key structure:
+```
+#text of examples seperated by a line of '-'
+```
+- added them manually, now we finally have one chapter's text in the format we want. [Sanity Data Check passed!]
